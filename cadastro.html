@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <script src="./js/cadastro.js" defer></script>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="./js/cadastro.js" defer></script>
+</head>
+<body onload="recarregar()">
+    <div class="modal show">
+       
+        <h2>Cadastro</h2>
+        <div class="container__modal" id="containerEmail">
+            <input class="nome" type="email" name="nome" id="email" placeholder="email@email.com" required>
+            <label id="labelEmail" class="label-nome" for="nome">E-mail:</label>
+        </div>
+
+
+        <div class="container__modal" id="containerSenha">
+            <input class="senha" type="password" name="senha" id="senha" required>
+            <label id="labelSenha" class="label-senha" for="senha">Senha:</label>
+            <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="container__modal" id="containerConfirmarEmail">
+            <input class="confirmar-senha" type="password" name="senha" id="confirmarSenha" required>
+            <label id="labelConfirmarSenha" class="label-confirmar-senha" for="senha">Confirmar senha:</label>
+            <i class="fa fa-eye eye2" aria-hidden="true"></i>
+        </div>
+
+        <div class="container2__modal">
+            <button id="btnCadastrar" class="btn__cadastrar">Cadastrar</button>
+            <div id="msgError">Dados inválidos</div>
+            <div id="msgSuccess">Cadastrando usuário...</div>
+        </div>
+      
+     </div>
+</body>
+</html>

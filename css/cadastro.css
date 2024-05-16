@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green-color:#1ce783;
+    --btn-color:#323843;
+}
+
+body{
+    display: flex;
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-inline:  50px;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+p{
+    color: var(--green-color);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.modal{
+border: 1px solid #ccc;
+display: flex;
+flex-flow: column;
+align-self: center;
+background: #00000090;
+/* background: rgba(0,0,0,0.6); */
+padding: 20px 50px;
+border-radius: 18px;
+position: relative;
+color: white;
+box-shadow: 3px 3px 1px 0px #fff;
+margin: auto;
+margin-top: 5%;
+width: 480px;
+
+}
+
+.container__modal label{
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all .3s ease-out;
+}
+
+.modal h2{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.container__modal{
+    display: flex;
+    flex-flow:column-reverse;
+    margin-bottom: 30px;   
+}
+
+
+
+.nome, .senha, .confirmar-senha{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    background-color: transparent;
+    color: white;
+    padding-left: 0;
+}
+
+.label-nome, .label-senha, .label-confirmar-senha{
+    position: absolute;
+    font-weight: bold;
+}
+
+.label-nome{
+    top: 90px;
+}
+
+.label-senha{
+    top: 160px;
+}
+
+
+.nome:focus + .label-nome{
+    top:85px; 
+    font-size: 0.75rem;
+}
+
+.senha:focus + .label-senha{
+    top:155px; 
+    font-size: 0.75rem;
+}
+
+.fa-eye{
+    position: absolute;
+    top: 160px;
+    right: 80px;
+    cursor: pointer;
+}
+
+.container2__modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 2rem;
+    gap: 30px;
+}
+
+.btn__cadastrar{
+    padding: .6rem 1.2rem;
+    background-color: var(--green-color);
+    color:black;
+    border: none;
+    border-radius: .25rem;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn__cadastrar:hover{
+    transition: all .5s ease-out;
+    background-color: black;
+    color: var(--green-color);
+}
+
+
+.label-confirmar-senha{
+    top: 230px;
+}
+
+.confirmar-senha:focus + .label-confirmar-senha{
+    top:225px; 
+    font-size: 0.75rem;
+}
+
+.eye2{
+    position: absolute;
+    top: 230px;
+    right: 80px;
+    cursor: pointer;
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSuccess{
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="./js/login.js" defer></script>
+</head>
+<body onload="recarregar()" >
+       <!--MODAL-->
+    <div class="modal show">
+        <h2>Login</h2>
+        <div class="container__modal">
+            <input class="nome" type="email" name="nome" id="email" placeholder="">
+            <label id="labelEmail" class="label-nome" for="nome">E-mail:</label>
+        </div>
+        <div class="container__modal">
+            <input class="senha" type="password" name="senha" id="senha">
+            <label id="labelSenha" class="label-senha" for="senha">Senha:</label>
+            <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+        <div class="container2__modal">
+            <button onclick="entrar()" id="btnEntrar" class="btn__entrar">Entrar</button>
+        </div>
+        <div class="container3__modal">
+            <div id="msgError">E-mail e senha não cadastrados ou incorretos</div>
+            <div id="msgSuccess">Redirecionando para a página</div>
+            <h4>Esqueceu sua senha? <a href="#">Redefinir senha</a></h4>
+            <h3>Ainda não tem uma conta?</h3>
+            <a class="btn__cadastrar" href="./cadastro.html" target="_blank">Cadastra-se!</a>
+        </div>
+     </div>
+</body>
+</html>
